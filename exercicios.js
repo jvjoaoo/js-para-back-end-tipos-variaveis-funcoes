@@ -88,6 +88,7 @@ const notaTerceiroBi = 5
 const notaQuartoBi = 5
 */
 
+/*
 const mediaFinal = somaDasNotas / 4
 
 if (mediaFinal > 5){
@@ -95,3 +96,48 @@ if (mediaFinal > 5){
 } else {
     console.log(`Nota: ${mediaFinal.toFixed(2)} Quase lá ${estudante}, infelizmente você não foi aprovado para a próxima etapa ☹  mais sorte na próxima, desejamos boas festas!`)
 }
+
+*/
+
+// 1. Crie uma variável contendo uma frase. Em seguida, exiba no console o comprimento da frase e a mesma frase com letras maiúsculas.
+
+const mensagem = 'Bem vindo as práticas de JavaScript'
+
+//console.log(mensagem, mensagem.length + " caracteres")
+//console.log(mensagem.toUpperCase())
+
+// 2. Declare duas variáveis, uma inicializada com valor null e outra que não recebe atribuição (resultando em undefined). Exiba os valores no console.
+let exemplo = null;
+let segundoExemplo;
+
+//console.log(exemplo)
+//console.log(segundoExemplo)
+
+
+// 3. Crie 3 variáveis de tipos diferentes, utilize template strings para combinar os diferentes tipos de dados (number, string, boolean) em uma única string e exiba o resultado no console.
+
+const identificador = 'João Vitor'
+const idade = 25
+const verificacao = true
+
+//console.log(`${identificador} tem ${idade} anos de idade, essa informação é ${verificacao}`)
+
+// 4. Crie uma variável numérica e uma string. Faça a conversão da variável numérica para string e da string para número. Exiba os tipos de dados resultantes no console.
+
+const primeiroValor = 25;
+const convertendoParaString = primeiroValor.toString();
+
+const segundoValor = '45';
+const convertendoParaNumber = parseInt(segundoValor);
+
+//console.log(convertendoParaString);
+//console.log(convertendoParaNumber);
+
+// 5. Crie uma variável com uma string e utilize métodos de manipulação de strings, como toUpperCase, toLowerCase, slice ou outros, para modificar a string original. Exiba
+//  os resultados finais no console.
+
+const modificandoMensagem = "mudando a caixa da mensagem";
+
+console.log(modificandoMensagem.toUpperCase())
+console.log(modificandoMensagem.toLowerCase())
+console.log(modificandoMensagem.slice(0,15))
