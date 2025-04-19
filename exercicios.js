@@ -138,6 +138,61 @@ const convertendoParaNumber = parseInt(segundoValor);
 
 const modificandoMensagem = "mudando a caixa da mensagem";
 
-console.log(modificandoMensagem.toUpperCase())
-console.log(modificandoMensagem.toLowerCase())
-console.log(modificandoMensagem.slice(0,15))
+//console.log(modificandoMensagem.toUpperCase())
+//console.log(modificandoMensagem.toLowerCase())
+//console.log(modificandoMensagem.slice(0,15))
+
+// 6. Crie variáveis que armazenem o valor do saldo, de depósito e de um saque de uma conta bancária, depois realize operações de adição e subtração entre eles utilizando uma variável 
+// chamada operacao, considerando a função de cada variável criada anteriormente. Exiba os resultados finais no console.
+let saldoAtual = 1000;
+let deposito = 500;
+let saque = 100;
+
+let operacao = saldoAtual + deposito - saque
+
+//console.log(operacao)
+
+// 2. Crie uma variável numérica com um valor. Utilize um operador ternário para verificar se esse valor é par ou ímpar. Exiba o resultado no console.
+
+const numeroIdenticado = 25;
+
+let verificacaoNumerica = numeroIdenticado % 2 === 0 ? "O número escolhido é par" :  "O número escolhido é impar";
+
+//console.log(verificacaoNumerica);
+
+// 3. Considere uma situação em que você está verificando se um usuário está logado e tem permissão de administrador para acessar determinada funcionalidade.
+//  Utilize variáveis booleanas para simular essas condições e use o operador AND para verificar se ambas são verdadeiras.
+
+const userLog = true;
+const userAdm = true;
+
+if(userLog && userAdm){
+    //console.log("Acesso permitido ao sistema.")
+} else {
+    //console.log("Acesso negado. É necessário estar logado como administrador.")
+}
+
+// 4. Declare duas variáveis booleanas e use o operador OR para verificar se pelo menos uma delas é verdadeira. Exiba o resultado no console.
+
+const hojeSabado = false;
+const fezSol = false;
+
+if (hojeSabado || fezSol){
+    //console.log("Verdadeiro")
+} else {
+    //console.log("Falso");
+}
+
+// 5. Imagine um sistema que determina se um usuário tem idade suficiente para comprar o ingresso para um show. Declare duas variáveis que determinem a idade mínima
+//  e qual a idade do usuário e utilize estruturas condicionais (if, else) para determinar se o usuário pode realizar a compra.
+
+const idadeUser = 17;
+const idadeMinima = 18;
+
+if(idadeUser >= idadeMinima){
+    console.log("Compra permitida.")
+} else {
+    console.log("Acesso negado. O usuário não tem a idade minima para comprar o ingresso.")
+}
+
+
