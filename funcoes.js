@@ -18,4 +18,12 @@ function somarDoisNumeros(numA, numB) {
    
    // atribuindo o retorno de uma função a uma variável
    const resultado = somarDoisNumeros(2, 2);
-   console.log(resultado);
+   //console.log(resultado);
+
+
+   function saudacao(nome) {
+    return `Olá, ${nome}!`;
+    }
+
+    const mensagem = saudacao("Gabriel");
+    console.log(mensagem);

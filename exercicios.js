@@ -192,7 +192,75 @@ const idadeMinima = 18;
 if(idadeUser >= idadeMinima){
     console.log("Compra permitida.")
 } else {
-    console.log("Acesso negado. O usuário não tem a idade minima para comprar o ingresso.")
+    //console.log("Acesso negado. O usuário não tem a idade minima para comprar o ingresso.")
 }
+
+// 1. Crie uma função que receba o nome de uma pessoa como argumento e retorne uma saudação personalizada. 
+// Em seguida, chame a função e exiba a saudação no console.
+/*
+function saudacao (nome){
+    return `Olá ${nome} seja bem vindo!`
+}
+
+console.log(saudacao('Igor'))
+
+
+// 2. Crie uma função que receba a idade de uma pessoa e retorne se ela é maior de idade (idade >= 18). Imprima o resultado no console.
+
+function verificacaoIdade (nome, idade){
+    if (idade >= 18){
+        return `Olá ${nome}, você tem ${idade} de idade e é maior de idade.`
+    } else {
+        return `Desculpe ${nome}, você tem apenas ${idade} de idade e não tem autorização para prosseguir.`
+    }
+}
+
+console.log(verificacaoIdade('Igor', 18));
+
+
+// 3. Crie uma função que receba uma string e verifique se é um palíndromo (uma palavra que é lida da mesma forma de trás para frente) 
+// utilizando o método de string reverse(). Retorne true se for um palíndromo e false caso contrário. Imprima o resultado no console.
+
+function verificacaoPalindromo(palavra){
+    const palavraInversa =  palavra.split('').reverse().join('');
+    return palavra.toLowerCase() === palavraInversa.toLowerCase();
+}
+
+console.log(verificacaoPalindromo('arara'));
+console.log(verificacaoPalindromo('Rato'));
+
+
+
+// 4.Crie uma função que receba três números como parâmetros e determine qual é o maior entre eles. Utilize estruturas condicionais (if, else)
+//  para comparar os valores e determinar o maior. Imprima o maior valor no console.
+
+function comparacaoNumerica(primeiroNumero, segundoNumero, terceiroNumero){
+    let maiorNumero = primeiroNumero;
+
+    if(segundoNumero > maiorNumero){
+        maiorNumero = segundoNumero;
+    } if(terceiroNumero > maiorNumero){
+        maiorNumero = terceiroNumero;
+    }
+
+    return `O maior número é: ${maiorNumero}`;
+}
+
+console.log(comparacaoNumerica(55, 25, 44));
+
+*/
+
+// 5. Crie uma arrow function chamada calculaPotencia que receba dois parâmetros: a base e o expoente. A função deve calcular a potência da base elevada ao expoente e retornar o resultado.
+
+const calculaPotencia = (base, expoente) => {
+    return Math.pow(base, expoente);
+};
+
+const base = 2;
+const expoente = 3;
+
+const resultado = calculaPotencia(base, expoente);
+console.log(`O resultado de ${base} elevado a ${expoente} é: ${resultado}`);
+
 
 
